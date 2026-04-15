@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoàng Xuân Phúc - Portfolio</title>
+
+<style>
+html{scroll-behavior:smooth;}
+body{
+    margin:0;
+    font-family:Arial;
+    background:#e5e7eb;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    background:#020617;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+/* SECTION */
+section{
+    padding:80px 20px;
+}
+
+/* HOME */
+.home{
+    text-align:center;
+    background:#0f172a;
+    color:white;
+}
+.avatar{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid #38bdf8;
+    margin-top:20px;
+}
+
+/* BOX */
+.box{
+    width:800px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* SKILL */
+.skill-bar{
+    background:#ddd;
+    height:8px;
+    margin:5px 0;
+}
+.skill{
+    height:8px;
+    background:#38bdf8;
+}
+
+/* PROJECT */
+.project{
+    background:#f1f5f9;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+}
+
+button{
+    padding:10px 20px;
+    background:#38bdf8;
+    border:none;
+    border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+<a href="#home">Trang chủ</a>
+<a href="#education">Học vấn</a>
+<a href="#skills">Kỹ năng</a>
+<a href="#projects">Dự án</a>
+<a href="#contact">Liên hệ</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="home">
+
+<h2 style="color:#38bdf8;">✨ Chào mừng đến với trang web của tôi ✨</h2>
+
+<h1>Hoàng Xuân Phúc</h1>
+<p>Sinh viên Hệ thống thông tin quản lý</p>
+
+<img src="C:\Users\ADMIN\Downloads\1749645422659frame.jpeg" class="avatar">
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<div class="box">
+<h2>Học vấn</h2>
+<p>
+Học viện Tài chính<br>
+Chuyên ngành: Hệ thống thông tin quản lý<br>
+Sinh viên năm 3
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="box">
+<h2>Kỹ năng</h2>
+
+HTML
+<div class="skill-bar"><div class="skill" style="width:80%"></div></div>
+
+CSS
+<div class="skill-bar"><div class="skill" style="width:75%"></div></div>
+
+JavaScript
+<div class="skill-bar"><div class="skill" style="width:60%"></div></div>
+
+SQL
+<div class="skill-bar"><div class="skill" style="width:70%"></div></div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="box">
+<h2>Dự án</h2>
+
+<div class="project">
+<h3>Website cá nhân</h3>
+<p>Thiết kế portfolio bằng HTML, CSS.</p>
+</div>
+
+<div class="project">
+<h3>Hệ thống quản lý sinh viên</h3>
+<p>Xây dựng hệ thống CRUD bằng SQL.</p>
+</div>
+
+<div class="project">
+<h3>Website bán hàng online</h3>
+<p>Giao diện web bán hàng cơ bản.</p>
+</div>
+
+<div class="project">
+<h3>Phân tích dữ liệu kinh tế</h3>
+<p>Sử dụng Excel và SQL phân tích dữ liệu.</p>
+</div>
+
+<div class="project">
+<h3>Thiết kế UI/UX</h3>
+<p>Thiết kế giao diện bằng Figma.</p>
+</div>
+
+<div class="project">
+<h3>App quản lý chi tiêu</h3>
+<p>Ứng dụng quản lý thu chi bằng JavaScript.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="box">
+<h2>Liên hệ</h2>
+
+<p>Email: hoangxuanphuc2308@gmal.com</p>
+<p>SĐT: 0356979030</p>
+
+<form onsubmit="sendMsg(event)">
+<input type="text" placeholder="Tên"><br><br>
+<input type="email" placeholder="Email"><br><br>
+<textarea placeholder="Tin nhắn"></textarea><br><br>
+<button>Gửi</button>
+</form>
+
+</div>
+</section>
+
+<script>
+function sendMsg(e){
+e.preventDefault();
+alert("Gửi thành công!");
+}
+</script>
+
+</body>
+</html>
